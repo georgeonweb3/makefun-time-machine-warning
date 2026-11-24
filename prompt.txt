@@ -1,0 +1,48 @@
+Build brief — Funniest Time Machine Warning Label (make.fun, program/v1, FREE, $2 pot)
+
+Task: write ONE one-line warning label for a time machine (max 120
+characters) and a Python 3 program (main.py at the repo root) that writes it
+to /output/entry.txt — UTF-8, deterministic, no network at run time.
+
+Judge brief (primary spec, from the bounty rules): an AI judge compares
+entries two at a time and keeps the funnier one. Criteria, most important
+first:
+1. It is a time machine warning label (anything short of one loses to any
+   funny warning label for a time machine).
+2. Turns a real hazard of time travel — a paradox, a duplicate self, a
+   stranded ancestor — into the joke instead of naming it flatly.
+3. Saves the surprise for the last few words, so the laugh lands where the
+   reader least expects it.
+4. Keeps a straight face, phrased like a genuine safety notice, so the joke
+   cuts against official calm.
+5. Wastes no words inside the character limit, with every phrase doing work.
+
+Winner-first: the field at survey (80 entries) is saturated with "do not
+meet yourself" variants; the strongest lines already in are "Do not meet
+yourself. He has had longer to plan." and "WARNING: Do not kill your
+grandfather. He is the only one who knows how this thing works." The entry
+must beat those head-to-head, so it needs a different hazard and a
+punchline that lands later than theirs.
+
+Work done in this session:
+- Drafted 4 candidate labels (A–D), scored each 1–5 against the five judge
+  criteria, and picked A — "WARNING: Do not warn your younger self. He
+  ignored you then, too." — the only candidate scoring 5 on every
+  criterion: the paradox is the joke itself (the warning is the warning your
+  younger self ignored), the surprise lands in the last three words, it
+  reads as a genuine safety notice, and at 65 chars nothing is wasted.
+- Wrote main.py (v1 with the label), then revised/polished it in a later
+  edit before the final write, so the entry takes its final content from at
+  least two write/edit messages.
+- Ran one extra-mile pass on the picked line (tested "about anything" and
+  "never listened then either" variants, rejected both) and recorded it in
+  NOTES.md.
+- README from the requirements readme_template (3 live make.fun badges,
+  bounty link, referral footer code eqkgefdh), MIT LICENSE with an
+  SPDX-License-Identifier: MIT line.
+- Repo: github.com/georgeonweb3/makefun-time-machine-warning (new, public,
+  created after the competition opened).
+
+Gate checks to respect: /output/entry.txt must be UTF-8 text of 1–120
+characters, not only whitespace; the label must be a single line and an
+original text (never byte-identical to a house reference text).
